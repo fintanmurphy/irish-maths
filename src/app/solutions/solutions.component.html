@@ -1,6 +1,6 @@
 <div class="container">
     <div *ngIf="rowData">
-        <ag-grid-angular class="ag-theme-quartz" style="height: 500px;" [rowData]="rowData" [gridOptions]="gridOptions"
+        <ag-grid-angular [class]="gridTheme" style="height: 500px;" [rowData]="rowData" [gridOptions]="gridOptions"
             rowSelection="single" (rowSelected)="onRowSelected($event)" (gridSizeChanged)="onGridSizeChanged($event)"
             (firstDataRendered)="onFirstDataRendered($event)">
         </ag-grid-angular>

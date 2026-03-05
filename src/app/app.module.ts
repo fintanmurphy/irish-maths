@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AgGridAngular } from 'ag-grid-angular';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,8 +25,7 @@ import { CreditsComponent } from './credits/credits.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AgGridAngular,
-    PdfViewerModule
+    AgGridAngular
   ],
   providers: [],
   bootstrap: [AppComponent]

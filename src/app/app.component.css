@@ -1,0 +1,11 @@
+.nav-pills {
+  --bs-nav-pills-link-active-bg: var(--bs-success);
+}
+
+.nav-pills .nav-link {
+  color: var(--bs-success);
+}
+
+.nav-pills .nav-link.active {
+  color: white;
+}

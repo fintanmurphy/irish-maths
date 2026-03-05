@@ -5,10 +5,15 @@
       <span class="fs-4">Irish Maths</span>
     </a>
 
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills align-items-center">
       <li class="nav-item"><a [routerLink]="['/home']" routerLinkActive="active" class="nav-link" >Home</a></li>
       <li class="nav-item"><a [routerLink]="['/solutions']" routerLinkActive="active" class="nav-link">Solutions</a></li>
       <li class="nav-item"><a [routerLink]="['/about']" routerLinkActive="active" class="nav-link">About</a></li>
+      <li class="nav-item ms-2">
+        <button class="btn btn-outline-success" (click)="toggleDarkMode()" [title]="isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'">
+          <i [class]="isDarkMode ? 'bi bi-sun' : 'bi bi-moon'"></i>
+        </button>
+      </li>
     </ul>
   </header>
 </div>

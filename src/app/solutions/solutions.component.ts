@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Solution, LOCAL_SOLUTIONS } from '../strapi-api.service';
+import { ThemeService } from '../theme.service';
 import {
   ColDef, RowSelectedEvent, GridOptions, FirstDataRenderedEvent,
   GridApi,
@@ -18,6 +19,7 @@ import { Router } from '@angular/router';
 })
 export class SolutionsComponent implements OnInit {
   rowData!: Solution[];
+  gridTheme = 'ag-theme-quartz';
 
   // Column Definitions for ag-grid
   colDefs: ColDef[] = [
@@ -41,10 +43,13 @@ export class SolutionsComponent implements OnInit {
   }
 
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.rowData = LOCAL_SOLUTIONS;
+    this.themeService.isDarkMode$.subscribe(dark => {
+      this.gridTheme = dark ? 'ag-theme-quartz-dark' : 'ag-theme-quartz';
+    });
   }
 
   onRowSelected(event: RowSelectedEvent) {
