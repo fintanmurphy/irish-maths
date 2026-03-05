@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+  <!-- Y axis -->
+  <line x1="12" y1="46" x2="12" y2="5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Y axis arrowhead -->
+  <polygon points="12,2 9,8 15,8" fill="black"/>
+  <!-- X axis -->
+  <line x1="4" y1="34" x2="46" y2="34" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- X axis arrowhead -->
+  <polygon points="49,34 43,31 43,37" fill="black"/>
+  <!-- Cubic polynomial with 3 real roots:
+       crosses x-axis ~x=5, rises to local max ~(14,16), crosses ~x=22,
+       dips to local min ~(32,48), crosses ~x=40, exits top-right -->
+  <path d="M 3,47 C 5,14 18,14 22,34 C 26,54 36,54 40,34 C 43,20 46,12 48,6"
+        stroke="black" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

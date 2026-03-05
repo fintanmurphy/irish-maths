@@ -15,3 +15,7 @@ a:hover {
 @import 'ag-grid-community/styles/ag-grid.css';
 /* Quartz Theme Specific CSS */
 @import 'ag-grid-community/styles/ag-theme-quartz.css';
+
+[data-bs-theme="dark"] .logo {
+  filter: brightness(0) invert(1);
+}
