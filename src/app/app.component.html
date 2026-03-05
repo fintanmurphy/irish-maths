@@ -1,0 +1,24 @@
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="assets/images/function-2.png" alt="Irish Maths" class="bi me-2" width="50" >
+      <span class="fs-4">Irish Maths</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a [routerLink]="['/home']" routerLinkActive="active" class="nav-link" >Home</a></li>
+      <li class="nav-item"><a [routerLink]="['/solutions']" routerLinkActive="active" class="nav-link">Solutions</a></li>
+      <li class="nav-item"><a [routerLink]="['/about']" routerLinkActive="active" class="nav-link">About</a></li>
+    </ul>
+  </header>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="container">
+  <footer class="pt-5 my-5 text-body-secondary border-top">
+    Created by the irishmaths.com team · © 2024 - <a href="/credits" class="text-body-secondary">credits</a>
+  </footer>
+</div>
+
+  
